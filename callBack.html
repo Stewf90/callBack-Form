@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stewart Fitzpatrick"/> 
+    <link rel="stylesheet" href="styles.css" /> 
+    
+    <title>Cardiff Met Call Back Form</title>
+</head>
+<body>
+    <h1>Request a Call Back</h1>
+    
+    <div>
+      <h2>Please fill out your details below, and your chosen school will get back to you shortly!</h2>
+      <br>
+        <form id= "contactForm" action="confirmation.html">
+            
+              <label for="schools">Choose a school you wish to speak to about a course:</label>
+              <br>
+              <select name="School you wish to speak to" id="schools">
+                <option value="School of Sport and Health Science" name="School of Sport and Health Science">School of Sport and Health Science</option>
+                <option value="School of Management">School of Management</option>
+                <option value="School of Technology">School of Technology</option>
+                <option value="School of Education and Social Policy">School of Education and Social Policy</option>
+                <option value="School of Art and Design">School of Art and Design</option>
+              </select>
+            
+            <br>
+            <label for="first">First name:</label><br>
+            <input type="text" style="width: 200px;" id="first" name="First name" placeholder="Enter your forename" required><br>
+            <label for="last">Last name:</label><br>
+            <input type="text" style="width: 200px;" id="last" name="Last name" placeholder="Enter your surname" required><br>
+            <label for="phone">Contact number:</label><br>
+            <input type="tel" style="width: 200px;" pattern="^((\+44)|(0)) ?\d{4} ?\d{6}$" id="phone" name="Phone" placeholder="Enter a phone number" required><br>
+            <label for="email">Email address:</label><br>
+            <input type="email" style="width: 200px;" id="email" name="Email" placeholder="Enter a valid email address" required><br>
+
+            <label>
+                Please choose a date which is best appropriate to call you:
+                <br>
+                <input type="date" name="Availability date" min="2023-01-01" max="2023-12-31"
+                  required />
+              
+              </label>
+            <br>
+
+              <label for="appt-time">
+                Please choose a time to receive this call (9am - 5:30pm):
+              </label>
+              <br>
+              <input id="appt-time" type="time" name="Availability time" min="09:00" max="17:30" required/>
+              <br>
+              <br>
+            <input type="submit">
+          </form>  
+    </div>
+
+    <script type="text/javascript" src="callBack.js"></script>
+    
+</body>
+</html>

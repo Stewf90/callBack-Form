@@ -1,0 +1,62 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22pt;
+    font-weight: 500;
+}
+
+html {
+    background-image: linear-gradient( to right, rgb(155, 155, 243), rgb(14, 83, 185));
+}
+
+h1 {
+    font-size: 60pt;
+    color: black;
+    text-shadow: darkblue;
+    text-align: center;
+    background-image: linear-gradient( to right, rgb(218, 207, 216), rgb(241, 2, 2));
+    }
+    
+h2 {
+    font-size: 30pt;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+#dataResults{
+    text-align: center;
+    font-size: 26pt;
+    color: black;
+    text-shadow: darkblue;
+}
+
+#contactForm {
+    font-size: 20pt;
+    text-align:inherit;
+}
+
+input[type=select]{
+    font-size: 32pt;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ 
+#return {
+    text-align: center;
+}
+
+button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

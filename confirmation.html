@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stewart Fitzpatrick"/> 
+    <link rel="stylesheet" href="styles.css" /> 
+    <title>Confirmation</title>
+</head>
+
+<body>
+    <h1>Confirmation</h1>
+    <h2>Thank you for filling out your details. A member of the school will call you back regarding your course enquiry.
+    </h2>
+
+    <!-- The below div is where the rows of user input are iterated to -->
+    <div id= 'dataResults'></div>
+
+    <script>
+        const json = localStorage.getItem('form');
+        const obj = JSON.parse(json);
+        for (key in obj) {
+            const row = `
+                <div>
+                    <span>${key}: ${obj[key]}</span>
+                    
+                </div>
+                `;
+                document.getElementById('dataResults').innerHTML += row;
+            }
+    </script>
+    <br>
+    <br>
+    <div id="return">
+   <a href="callBack.html"><button>Return to Contact Form Page</button></a>
+        </div>
+ 
+    
+</body>
+</html>
